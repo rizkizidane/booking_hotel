@@ -9,7 +9,7 @@
                         <a href="<?php echo base_url('index.php/admin/status') ?>"><i class="fa fa-desktop"></i> Status</a>
                     </li>
 					<li>
-                        <a href="<?php echo base_url('index.php/admin/roombook') ?>"><i class="fa fa-bar-chart-o"></i> Room Booking</a>
+                        <a href="<?php echo base_url('index.php/admin/reservation') ?>"><i class="fa fa-bar-chart-o"></i> Reservation</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('index.php/admin/payment') ?>"><i class="fa fa-qrcode"></i> Payment</a>

@@ -9,7 +9,7 @@
                         <a href="<?php echo base_url('index.php/admin/status') ?>"><i class="fa fa-desktop"></i> Status</a>
                     </li>
 					<li>
-                        <a href="<?php echo base_url('index.php/admin/roombook') ?>"><i class="fa fa-bar-chart-o"></i> Room Booking</a>
+                        <a href="<?php echo base_url('index.php/admin/reservation') ?>"><i class="fa fa-bar-chart-o"></i> Reservation</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('index.php/admin/payment') ?>"><i class="fa fa-qrcode"></i> Payment</a>
@@ -90,21 +90,21 @@
      <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="<?php echo base_url('assets/assets_admin/') ?>/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('assets/assets_admin/') ?>/js/bootstrap.min.js"></script>
     <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+    <script src="<?php echo base_url('assets/assets_admin/') ?>/js/jquery.metisMenu.js"></script>
      <!-- DATA TABLE SCRIPTS -->
-    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
-    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+    <script src="<?php echo base_url('assets/assets_admin/') ?>/js/dataTables/jquery.dataTables.js"></script>
+    <script src="<?php echo base_url('assets/assets_admin/') ?>/js/dataTables/dataTables.bootstrap.js"></script>
         <script>
             $(document).ready(function () {
                 $('#dataTables-example').dataTable();
             });
     </script>
          <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
+    <script src="<?php echo base_url('assets/assets_admin/') ?>/js/custom-scripts.js"></script>
     
    
 </body>
