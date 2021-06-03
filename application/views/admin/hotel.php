@@ -6,13 +6,13 @@
                         <a href="<?php echo base_url('index.php/admin/home') ?>"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fas fa-hotel"></i> Hotel</a>
+                        <a class="active-menu" href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fas fa-hotel"></i> Hotel</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('index.php/admin/status') ?>"><i class="fa fa-desktop"></i> Status</a>
                     </li>
 					<li>
-                        <a class="active-menu" href="<?php echo base_url('index.php/admin/reservation') ?>"><i class="fa fa-bar-chart-o"></i> Reservation</a>
+                        <a href="<?php echo base_url('index.php/admin/reservation') ?>"><i class="fa fa-bar-chart-o"></i> Reservation</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('index.php/admin/payment') ?>"><i class="fa fa-qrcode"></i> Payment</a>
@@ -33,11 +33,15 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            RESERVATION <small></small>
+                            HOTEL
                         </h1>
                     </div>
                 </div> 
-                  
+                
+                <a href="<?php echo base_url('index.php/admin/hotel/tambah_hotel') ?>" class="btn btn-primary">Tambah Hotel</a><br><br>
+
+                <?php echo $this->session->flashdata('pesan') ?>
+
                 <div class="row">
                     <div class="col-md-12">
                         <!-- Advanced Tables -->
@@ -47,19 +51,32 @@
                                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                         <thead>
                                             <tr>
-                                                <th>Nama Lengkap</th>
-                                                <th>Nomor Telepon</th>
-                                                <th>Email</th>
+                                                <th>No. </th>
                                                 <th>Nama Hotel</th>
+                                                <th>Fasilitas</th>
                                                 <th>Rating</th>
-                                                <th>Jumlah Kamar</th>
-                                                <th>Tanggal Check-in</th>
-                                                <th>Tanggal Check-out</th>
-                                                <th>Harga</th>
+                                                <th>Gambar</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
+                                        <?php 
+                                            $no = 1;
+                                            foreach($hotel as $h) : ?>
+                                                <tr>
+                                                    <td><?php echo $no++ ?></td>
+                                                    <td><?php echo $h->nama_hotel ?></td>
+                                                    <td><?php echo $h->fasilitas ?></td>
+                                                    <td><?php echo $h->rating ?></td>
+                                                    <td>
+                                                        <img width="100px" src="<?php echo base_url().'assets/upload/'.$h->gambar ?>">
+                                                    </td>
+                                                    <td>
+                                                        <a href="<?php echo base_url('index.php/admin/hotel/delete_hotel/').$h->id_hotel ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                                        <a href="<?php echo base_url('index.php/admin/hotel/update_hotel/').$h->id_hotel ?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                                    </td>
+                                                </tr>
+                                        <?php endforeach; ?>
                                         </tbody>
                                     </table>
                                 </div>

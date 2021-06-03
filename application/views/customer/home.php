@@ -277,109 +277,55 @@
 				<div class="clearfix"> </div>
 </section>
 <!-- //gallery -->
-	 <!-- rooms & rates -->
-      <div class="plans-section" id="hotel">
-				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Hotels</h3>
-						<div class="priceing-table-main">
-				 <div class="col-md-3 price-grid">
-					<div class="price-block agile">
-						<div class="price-gd-top">
-						<img src="<?php echo base_url('assets/assets_customer/') ?>images/r1.jpg" alt=" " class="img-responsive" />
-							<h4>Deluxe Room</h4>
-						</div>
-						<div class="price-gd-bottom">
-							   <div class="price-list">
-									<ul>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									
-								     </ul>
-							</div>
-							<div class="price-selet">	
-								<h3><span>$</span>320</h3>						
-								<a href="<?php echo base_url('index.php/customer/reservation') ?>" >Book Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 price-grid ">
-					<div class="price-block agile">
-						<div class="price-gd-top">
-						<img src="<?php echo base_url('assets/assets_customer/') ?>images/r2.jpg" alt=" " class="img-responsive" />
-							<h4>Luxury Room</h4>
-						</div>
-						<div class="price-gd-bottom">
-							<div class="price-list">
-									<ul>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-								</ul>
-							</div>
-							<div class="price-selet">
-								<h3><span>$</span>220</h3>
-								<a href="<?php echo base_url('index.php/customer/reservation') ?>" >Book Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 price-grid lost">
-					<div class="price-block agile">
-						<div class="price-gd-top">
-						<img src="<?php echo base_url('assets/assets_customer/') ?>images/r3.jpg" alt=" " class="img-responsive" />
-							<h4>Guest House</h4>
-						</div>
-						<div class="price-gd-bottom">
-							<div class="price-list">
-								<ul>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-								</ul>
-							</div>
-							<div class="price-selet">
-								<h3><span>$</span>180</h3>
-								<a href="<?php echo base_url('index.php/customer/reservation') ?>" >Book Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 price-grid wthree lost">
-					<div class="price-block agile">
-						<div class="price-gd-top ">
-							<img src="<?php echo base_url('assets/assets_customer/') ?>images/r4.jpg" alt=" " class="img-responsive" />
-							<h4>Single Room</h4>
-						</div>
-						<div class="price-gd-bottom">
-							<div class="price-list">
-								<ul>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-								</ul>
-							</div>
-							<div class="price-selet">
-								<h3><span>$</span> 150</h3>
-								<a href="<?php echo base_url('index.php/customer/reservation') ?>" >Book Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+<!-- visitors -->
+<div class="w3l-visitors-agile" id="hotel">
+		<div class="container">
+                 <h3 class="title-w3-agileits title-black-wthree">Hotels</h3>
 		</div>
+		<div class="w3layouts_work_grids">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<?php foreach($hotel as $h) : ?>
+						<li>
+							<div class="w3layouts_work_grid_left">
+								<img src="<?php echo base_url('assets/upload/'.$h->gambar) ?>" alt=" " class="img-responsive" />
+							</div>
+							<div class="w3layouts_work_grid_right">
+								<h1><?php echo $h->nama_hotel ?> </h1><br>
+								<h4>
+								<?php
+									if($h->rating == 1) {
+										echo "<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i>";
+									}
+									else if($h->rating == 2) {
+										echo "<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i>";
+									}
+									else if($h->rating == 3) {
+										echo "<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i>";
+									}
+									else if($h->rating == 4) {
+										echo "<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star-o' aria-hidden='true'></i>";
+									}
+									else if($h->rating == 5) {
+										echo "<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>";
+									}
+								?>
+								</h4><br><br>
+								<h4>Fasilitas: 
+									<p><?php echo $h->fasilitas ?></p>
+								</h4>
+								<p>Rating: <?php echo $h->rating?></p>
+							</div>
+							<div class="clearfix"> </div>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			</section>
+		</div>	
 	</div>
-	 <!--// rooms & rates -->
+  <!-- visitors -->
 <!-- team -->
 <div class="team" id="team">
 	<div class="container">

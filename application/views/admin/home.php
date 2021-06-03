@@ -6,6 +6,9 @@
                         <a class="active-menu" href="<?php echo base_url('index.php/admin/home') ?>"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
+                        <a href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fas fa-hotel"></i> Hotel</a>
+                    </li>
+                    <li>
                         <a href="<?php echo base_url('index.php/admin/status') ?>"><i class="fa fa-desktop"></i> Status</a>
                     </li>
 					<li>
