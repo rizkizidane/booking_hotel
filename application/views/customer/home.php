@@ -172,97 +172,97 @@
 <section class="portfolio-w3ls" id="gallery">
 		 <h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g1.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g1.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/intercontinental.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/intercontinental.jpg" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>INTERCONTINENTAL</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g2.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g2.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/216520252.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/216520252.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>INTERCONTINENTAL</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g3.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g3.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/o0rEJhnFM8QAofg1a2zeZ5zctY2BE-UK0j6IAWUoKh1U0fpIxmu7ACtzTNKqkX8SfltxjW6rxbVeaIwwou1PY1Ce1KG2PF9rr2dF.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/o0rEJhnFM8QAofg1a2zeZ5zctY2BE-UK0j6IAWUoKh1U0fpIxmu7ACtzTNKqkX8SfltxjW6rxbVeaIwwou1PY1Ce1KG2PF9rr2dF.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>FOUR SEASONS</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g4.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g4.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/yRVajM_RqIstKW3OvWBd3GokbSnbxWgRbSduDdzd5zZHc90I5dPzj9n9NPN7GF95oXijwKfFWmQuMZvRVvg4krxxf7ovQ09u3pxL.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/yRVajM_RqIstKW3OvWBd3GokbSnbxWgRbSduDdzd5zZHc90I5dPzj9n9NPN7GF95oXijwKfFWmQuMZvRVvg4krxxf7ovQ09u3pxL.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>FOUR SEASONS</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g5.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g5.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/LAYsK819hKKxSE_psTq6D8gYw8Ev0VD7hOzvfhOijyqJQT1vJ8Bv39e1Z-guI2_h04Mqd2v15Zsw8yP2C7bPA6SmEoh1lSinorI-.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/LAYsK819hKKxSE_psTq6D8gYw8Ev0VD7hOzvfhOijyqJQT1vJ8Bv39e1Z-guI2_h04Mqd2v15Zsw8yP2C7bPA6SmEoh1lSinorI-.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>THE HAVEN</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g6.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g6.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/2j1b4i6SxHrMFYpNdpUdio2XqJfuC7JEsxSX5EBRSbIolvRXEw2InHZ7c6q913gS9YyPjYKqx5TTMbzQMdnrUoyqzT9L2lCVnoxO.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/2j1b4i6SxHrMFYpNdpUdio2XqJfuC7JEsxSX5EBRSbIolvRXEw2InHZ7c6q913gS9YyPjYKqx5TTMbzQMdnrUoyqzT9L2lCVnoxO.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>THE HAVEN</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
 				   </a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g6.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g7.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/lDZHUkQrcL5_lVT6eytazkunoeSmhsm0CQtOTJfyIAkNBD4lWRW5rJYneI_xH0kdG1ZzcsqeeOGBEitlXN4s6LpH8ewLR_GeffR8.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/lDZHUkQrcL5_lVT6eytazkunoeSmhsm0CQtOTJfyIAkNBD4lWRW5rJYneI_xH0kdG1ZzcsqeeOGBEitlXN4s6LpH8ewLR_GeffR8.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>SWISS-BELHOTEL</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
 				   </a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g6.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g8.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipMF9agRB2TDPr25JqK6aW63BPpN-_Ayj6vTTainw325-h243-k-no.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipMF9agRB2TDPr25JqK6aW63BPpN-_Ayj6vTTainw325-h243-k-no.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>SWISS-BELHOTEL</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 					   </div>
 				   </a>
 				</div>
 					<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g9.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g9.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipOJK2fNx4PNj7XaNIv7i_6b0fI_29jQBWyUM_24w592-h404-n-k-no-v1.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipOJK2fNx4PNj7XaNIv7i_6b0fI_29jQBWyUM_24w592-h404-n-k-no-v1.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>NOVOTEL</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g10.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g10.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/TFNl1gX_AL9A5i2eeRrFyyeAulj8GLXEFsuNRPi59qHX6oS2Q_Kp_c9b2nNmPGGAdo7AvpxfhQlGC_2GpI4idpXRg-bJ7XDMcWm9.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/TFNl1gX_AL9A5i2eeRrFyyeAulj8GLXEFsuNRPi59qHX6oS2Q_Kp_c9b2nNmPGGAdo7AvpxfhQlGC_2GpI4idpXRg-bJ7XDMcWm9.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>NOVOTEL</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g4.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g4.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipOTwwdg-CPXhUYoJJP8XAYBsBGh5M4zeKi7NkrPw592-h404-n-k-no-v1.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipOTwwdg-CPXhUYoJJP8XAYBsBGh5M4zeKi7NkrPw592-h404-n-k-no-v1.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>QUBIKA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
 				</div>
 				<div class="col-md-3 gallery-grid gallery1">
-					<a href="<?php echo base_url('assets/assets_customer/') ?>images/g2.jpg" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/g2.jpg" class="img-responsive" alt="/">
+					<a href="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipPedLaBKsI0-mCyRTS1YqmPnP62OwVRlaFpOrMTw592-h404-n-k-no-v1.png" class="swipebox"><img src="<?php echo base_url('assets/assets_customer/') ?>images/AF1QipPedLaBKsI0-mCyRTS1YqmPnP62OwVRlaFpOrMTw592-h404-n-k-no-v1.png" class="img-responsive" alt="/" style="height: 200px">
 						<div class="textbox">
-						<h4>SUN RISE</h4>
+						<h4>QUBIKA</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -282,7 +282,7 @@
 						<?php foreach($hotel as $h) : ?>
 						<li>
 							<div class="w3layouts_work_grid_left">
-								<img src="<?php echo base_url('assets/upload/'.$h->gambar) ?>" alt=" " class="img-responsive" />
+								<img src="<?php echo base_url('assets/upload/'.$h->gambar) ?>" class="img-responsive" alt="/">
 							</div>
 							<div class="w3layouts_work_grid_right">
 								<h1><?php echo $h->nama_hotel ?> </h1><br>
@@ -304,7 +304,7 @@
 										echo "<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>";
 									}
 								?>
-								</h4><br><br>
+								</h4><br>
 								<h4>Fasilitas: 
 									<p><?php echo $h->fasilitas ?></p>
 								</h4>
