@@ -6,10 +6,13 @@
                         <a href="<?php echo base_url('index.php/admin/home') ?>"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fas fa-hotel"></i> Hotel</a>
+                        <a class="active-menu" href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fa fa-desktop"></i> Hotel</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('index.php/admin/status') ?>"><i class="fa fa-desktop"></i> Status</a>
+                        <a href="<?php echo base_url('index.php/admin/kamar') ?>"><i class="fa fa-desktop"></i> Kamar</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url('index.php/admin/customer') ?>"><i class="fa fa-user"></i> Customer</a>
                     </li>
 					<li>
                         <a href="<?php echo base_url('index.php/admin/reservation') ?>"><i class="fa fa-bar-chart-o"></i> Reservation</a>
@@ -74,11 +77,9 @@
                                         <input type="file" name="gambar" class="form-control">
                                     </div>
                                 </div>
-                                <div class="ml-3">
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                    <button type="reset" class="btn btn-danger">Reset</button>
-                                </div>
                             </div>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
                         </form>
                     </div>
                 </div>  

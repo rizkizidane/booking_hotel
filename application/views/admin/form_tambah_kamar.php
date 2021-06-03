@@ -6,10 +6,10 @@
                         <a href="<?php echo base_url('index.php/admin/home') ?>"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fa fa-desktop"></i> Hotel</a>
+                        <a href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fa fa-desktop"></i> Hotel</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('index.php/admin/kamar') ?>"><i class="fa fa-desktop"></i> Kamar</a>
+                        <a class="active-menu" href="<?php echo base_url('index.php/admin/kamar') ?>"><i class="fa fa-desktop"></i> Kamar</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('index.php/admin/customer') ?>"><i class="fa fa-user"></i> Customer</a>
@@ -36,55 +36,52 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            Update Hotel
+                            Tambah Kamar
                         </h1>
                     </div>
                 </div> 
                 
                 <div class="row">
                     <div class="col-md-12">
-                        <?php foreach ($hotel as $h) : ?>
-                        <form method="POST" action="<?php echo base_url('index.php/admin/hotel/update_hotel_aksi') ?>" enctype="multipart/form-data">
+                        <form method="POST" action="<?php echo base_url('index.php/admin/kamar/tambah_kamar_aksi') ?>" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nama Hotel</label>
-                                        <input type="hidden" name="id_hotel" value="<?php echo $h->id_hotel ?>">
-                                        <input type="text" name="nama_hotel" class="form-control" value="<?php echo $h->nama_hotel ?>">
-                                        <?php echo form_error('nama_hotel','<div class="text-small text-danger">','</div') ?>
+                                        <!-- <select class="form-control" required>
+                                            <option value selected ></option>
+                                            <?php foreach($hotel as $h) ?>
+                                            <option value="<?php echo $h->id_hotel ?>"><?php echo $h->nama_hotel ?></option>
+                                        </select> -->
+                                        <?php echo form_error('id_hotel','<div class="text-small text-danger">','</div') ?>
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Fasilitas</label>
-                                        <input type="text" name="fasilitas" class="form-control" value="<?php echo $h->fasilitas ?>">
+                                        <label>Tipe Kamar</label>
+                                        <select name="tipe_kamar" class="form-control" required>
+                                            <option value selected ></option>
+                                            <option value="Single Room">Single Room</option>
+                                            <option value="Deluxe Room">Deluxe Room</option>
+                                        </select>
                                         <?php echo form_error('fasilitas','<div class="text-small text-danger">','</div') ?>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Rating</label>
-                                        <select name="rating" class="form-control">
-                                            <option <?php if($h->rating=="1"){echo "selected";} ?> value="1">1</option>
-                                            <option <?php if($h->rating=="2"){echo "selected";} ?> value="2">2</option>
-                                            <option <?php if($h->rating=="3"){echo "selected";} ?> value="3">3</option>
-                                            <option <?php if($h->rating=="4"){echo "selected";} ?> value="4">4</option>
-                                            <option <?php if($h->rating=="5"){echo "selected";} ?> value="5">5</option>
-                                        </select>
-                                        <?php echo form_error('rating','<div class="text-small text-danger">','</div') ?>
+                                        <label>Jumlah Kamar</label>
+                                        <input type="number" name="jumlah_kamar" class="form-control" required>
+                                        <?php echo form_error('jumlah_kamar','<div class="text-small text-danger">','</div') ?>
                                     </div>
-
                                     <div class="form-group">
-                                        <label>Gambar</label>
-                                        <input type="file" name="gambar" class="form-control">
+                                        <label>Harga</label>
+                                        <input type="number" name="harga" class="form-control" required>
+                                        <?php echo form_error('harga','<div class="text-small text-danger">','</div') ?>
                                     </div>
-                                </div>
-                                <div class="ml-3">
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                    <button type="reset" class="btn btn-danger">Reset</button>
                                 </div>
                             </div>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
                         </form>
-                        <?php endforeach; ?>
                     </div>
                 </div>  
             </div>

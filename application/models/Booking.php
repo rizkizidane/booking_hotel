@@ -17,6 +17,16 @@ class Booking extends CI_Model {
         $this->db->where($where);
         $this->db->delete($table);
     }
+
+    public function ambil_id_hotel($id) {
+        $hasil = $this->db->where('id_hotel', $id)->get('hotel');
+        if($hasil->num_rows() > 0) {
+            return $hasil->result();
+        }
+        else {
+            return false;
+        }
+    }
 }
 
 

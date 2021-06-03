@@ -47,6 +47,7 @@
 							<li class="menu__item"><a href="#gallery" class="menu__link scroll">Gallery</a></li>
 							<li class="menu__item"><a href="#hotel" class="menu__link scroll">Hotel</a></li>
 							<li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li>
+							<li class="menu__item"><a href="#" class="menu__link scroll">Profile</a></li>
 							<li class="s-bar">
 								<div class="search">
 									<input class="search_box" type="checkbox" id="search_box">
