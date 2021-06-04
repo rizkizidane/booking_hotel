@@ -31,11 +31,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            RESERVATION <small></small>
+                            RESERVATION <small><?php ?></small>
                         </h1>
                     </div>
                 </div> 
-                  
+                <?php foreach($reservation as $r) : ?>
                 <div class="row">
                     <div class="col-md-5 col-sm-5">
                         <div class="panel panel-primary">
@@ -43,9 +43,10 @@
                                 PERSONAL INFORMATION
                             </div>
                             <div class="panel-body">
-                                <form name="form" method="post">
+                                <form name="form" method="post" action="<?php echo base_url('index.php/customer/reservation/tambah_reservation_aksi') ?>">
                                     <div class="form-group">
                                         <label>Nama Lengkap</label>
+                                        <input type="hidden" name="id_hotel" value="<?php echo $r->id_hotel ?>">
                                         <input name="nama" class="form-control" required>
                                     </div>
                                 
@@ -85,12 +86,17 @@
 
                                     <div class="form-group">
                                         <label>Tanggal Check-In</label>
-                                        <input name="cin" type ="date" class="form-control" required>
+                                        <input name="checkin" type ="date" class="form-control" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Tanggal Check-Out</label>
-                                        <input name="cout" type ="date" class="form-control" required>
+                                        <input name="checkout" type ="date" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Harga</label>
+                                        <input name="harga" type ="number" class="form-control" value="<?php echo $r->harga ?>" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -98,6 +104,7 @@
                     </div>
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                <?php endforeach; ?>
                 </form>    
             </div>
 			 <!-- /. PAGE INNER  -->

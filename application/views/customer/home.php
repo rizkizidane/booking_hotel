@@ -309,6 +309,8 @@
 									<p><?php echo $h->fasilitas ?></p>
 								</h4>
 								<p>Rating: <?php echo $h->rating?></p>
+								<a href="<?php echo base_url('index.php/customer/reservation/tambah_reservation/'.$h->id_hotel) ?>"><button class="btn btn-primary">Book Now</button></a>
+								<a href="<?php echo base_url('index.php/customer/reservation/detail_reservation/'.$h->id_hotel) ?>"><button class="btn btn-success">View</button></a>
 							</div>
 							<div class="clearfix"> </div>
 						</li>

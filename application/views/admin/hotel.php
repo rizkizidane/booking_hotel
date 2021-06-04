@@ -9,9 +9,6 @@
                         <a class="active-menu" href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fa fa-desktop"></i> Hotel</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('index.php/admin/kamar') ?>"><i class="fa fa-desktop"></i> Kamar</a>
-                    </li>
-                    <li>
                         <a href="<?php echo base_url('index.php/admin/customer') ?>"><i class="fa fa-user"></i> Customer</a>
                     </li>
 					<li>
@@ -58,6 +55,8 @@
                                                 <th>Nama Hotel</th>
                                                 <th>Fasilitas</th>
                                                 <th>Rating</th>
+                                                <th>Jumlah Kamar</th>
+                                                <th>Harga</th>
                                                 <th>Gambar</th>
                                                 <th>Action</th>
                                             </tr>
@@ -71,6 +70,8 @@
                                                     <td><?php echo $h->nama_hotel ?></td>
                                                     <td><?php echo $h->fasilitas ?></td>
                                                     <td><?php echo $h->rating ?></td>
+                                                    <td><?php echo $h->jumlah_kamar ?></td>
+                                                    <td>Rp. <?php echo number_format($h->harga,0,',','.') ?></td>
                                                     <td>
                                                         <img width="100px" src="<?php echo base_url().'assets/upload/'.$h->gambar ?>">
                                                     </td>

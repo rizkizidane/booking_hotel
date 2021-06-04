@@ -9,9 +9,6 @@
                         <a class="active-menu" href="<?php echo base_url('index.php/admin/hotel') ?>"><i class="fa fa-desktop"></i> Hotel</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('index.php/admin/kamar') ?>"><i class="fa fa-desktop"></i> Kamar</a>
-                    </li>
-                    <li>
                         <a href="<?php echo base_url('index.php/admin/customer') ?>"><i class="fa fa-user"></i> Customer</a>
                     </li>
 					<li>
@@ -57,8 +54,7 @@
                                         <input type="text" name="fasilitas" class="form-control" required>
                                         <?php echo form_error('fasilitas','<div class="text-small text-danger">','</div') ?>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
+
                                     <div class="form-group">
                                         <label>Rating</label>
                                         <select name="rating" class="form-control" required>
@@ -70,6 +66,19 @@
                                             <option value="5">5</option>
                                         </select>
                                         <?php echo form_error('rating','<div class="text-small text-danger">','</div') ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Jumlah Kamar</label>
+                                        <input type="number" name="jumlah_kamar" class="form-control" required>
+                                        <?php echo form_error('jumlah_kamar','<div class="text-small text-danger">','</div') ?>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Harga</label>
+                                        <input type="number" name="harga" class="form-control" required>
+                                        <?php echo form_error('harga','<div class="text-small text-danger">','</div') ?>
                                     </div>
 
                                     <div class="form-group">
