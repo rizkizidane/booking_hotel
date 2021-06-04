@@ -48,6 +48,7 @@
 							<li class="menu__item"><a href="#hotel" class="menu__link scroll">Hotel</a></li>
 							<li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li>
 							<li class="menu__item"><a href="#" class="menu__link scroll">Profile</a></li>
+							<li><a href="<?php echo base_url('index.php/auth/logout') ?>">Logout</a></li>
 							<li class="s-bar">
 								<div class="search">
 									<input class="search_box" type="checkbox" id="search_box">
@@ -59,7 +60,7 @@
 										</form>
 									</div>
 								</div>
-							</li>
+							</li>							
 						</ul>
 					</nav>
 				</div>

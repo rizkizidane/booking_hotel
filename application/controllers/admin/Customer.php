@@ -48,7 +48,7 @@ class Customer extends CI_Controller {
                 'password'      => $password,
                 'tanggal_lahir' => $tanggal_lahir,
                 'no_telepon'    => $no_telepon,
-                'foto'          => $foto,
+                'foto'          => $foto
             );
 
             $this->booking->insert_data($data, 'customer');
