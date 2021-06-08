@@ -21,7 +21,7 @@
                         <a href="<?php echo base_url('index.php/admin/profit') ?>"><i class="fa fa-qrcode"></i> Profit</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('index.php/admin/logout') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <a href="<?php echo base_url('index.php/auth/logout') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
                 </ul>
             </div>
@@ -47,6 +47,7 @@
                                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                         <thead>
                                             <tr>
+                                                <th>No. </th>
                                                 <th>Nama Lengkap</th>
                                                 <th>Nomor Telepon</th>
                                                 <th>Email</th>
@@ -56,10 +57,30 @@
                                                 <th>Tanggal Check-in</th>
                                                 <th>Tanggal Check-out</th>
                                                 <th>Harga</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
+                                            <?php 
+                                                $no = 1;
+                                                foreach($reservation as $r) : ?>
+                                                    <tr>
+                                                        <td><?php echo $no++ ?></td>
+                                                        <td><?php echo $r->nama_customer ?></td>
+                                                        <td><?php echo $r->no_telepon ?></td>
+                                                        <td><?php echo $r->email ?></td>
+                                                        <td><?php echo $r->nama_hotel ?></td>
+                                                        <td><?php echo $r->rating ?></td>
+                                                        <td><?php echo $r->jumlah_kamar ?></td>
+                                                        <td><?php echo $r->checkin ?></td>
+                                                        <td><?php echo $r->checkout ?></td>
+                                                        <td>Rp. <?php echo number_format($r->harga,0,',','.') ?></td>
+                                                        <td>
+                                                            <!-- <a href="<?php echo base_url('index.php/admin/reservation/delete_reservation/').$r->id_reservation ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                                            <a href="<?php echo base_url('index.php/admin/reservation/update_reservation/').$r->id_reservation ?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a> -->
+                                                        </td>
+                                                    </tr>
+                                            <?php endforeach; ?>
                                         </tbody>
                                     </table>
                                 </div>

@@ -37,73 +37,47 @@
                 </div> 
                 <?php foreach($reservation as $r) : ?>
                 <div class="row">
-                    <div class="col-md-5 col-sm-5">
+                    <div class="col-md-12 col-sm-12">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                PERSONAL INFORMATION
+                                RESERVATION INFORMATION
                             </div>
                             <div class="panel-body">
                                 <form name="form" method="post" action="<?php echo base_url('index.php/customer/reservation/tambah_reservation_aksi') ?>">
-                                    <div class="form-group">
-                                        <label>Nama Lengkap</label>
-                                        <input type="hidden" name="id_hotel" value="<?php echo $r->id_hotel ?>">
-                                        <input name="nama" class="form-control" required>
-                                    </div>
-                                
-                                    <div class="form-group">
-                                        <label>Nomor Telepon</label>
-                                        <input name="no_telepon" type ="number" class="form-control" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                            <label>Email</label>
-                                            <input name="email" type="email" class="form-control" required>        
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    RESERVATION INFORMATION
+                                <div class="form-group">
+                                    <label>Jumlah Kamar</label>
+                                    <input type="hidden" name="id_hotel" value="<?php echo $r->id_hotel ?>">
+                                    <select name="jumlah_kamar" class="form-control" required>
+                                        <option value selected ></option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
                                 </div>
-                                <div class="panel-body">
-                                    <div class="form-group">
-                                        <label>Jumlah Kamar</label>
-                                        <select name="jumlah_kamar" class="form-control" required>
-                                            <option value selected ></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                        </select>
-                                    </div>
 
-                                    <div class="form-group">
-                                        <label>Tanggal Check-In</label>
-                                        <input name="checkin" type ="date" class="form-control" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Tanggal Check-Out</label>
-                                        <input name="checkout" type ="date" class="form-control" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Harga</label>
-                                        <input name="harga" type ="number" class="form-control" value="<?php echo $r->harga ?>" readonly>
-                                    </div>
+                                <div class="form-group">
+                                    <label>Tanggal Check-In</label>
+                                    <input name="checkin" type ="date" class="form-control" required>
                                 </div>
+
+                                <div class="form-group">
+                                    <label>Tanggal Check-Out</label>
+                                    <input name="checkout" type ="date" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Harga</label>
+                                    <input name="harga" type ="number" class="form-control" value="<?php echo $r->harga ?>" readonly>
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                 <?php endforeach; ?>
                 </form>    
             </div>
