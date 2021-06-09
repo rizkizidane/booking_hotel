@@ -73,7 +73,14 @@
                                                         <td><?php echo $r->jumlah_kamar ?></td>
                                                         <td><?php echo $r->checkin ?></td>
                                                         <td><?php echo $r->checkout ?></td>
-                                                        <td>Rp. <?php echo number_format($r->harga,0,',','.') ?></td>
+                                                        <td>Rp. 
+                                                            <?php 
+                                                                $awal = new DateTime($r->checkin);
+                                                                $akhir = new DateTime($r->checkout);
+                                                                $diff = $akhir->diff($awal);
+                                                                echo number_format($r->harga * $r->jumlah_kamar * $diff->d,0,',','.');
+                                                            ?>
+                                                        </td>
                                                     </tr>
                                             <?php endforeach; ?>
                                         </tbody>

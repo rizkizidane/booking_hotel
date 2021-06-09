@@ -37,13 +37,13 @@
                 <?php echo form_error('password','<div class="text-small text-danger">','</div>') ?>
               </div>
 
-              <!-- <div class="form-group">
+              <div class="form-group">
                 <span><?php echo $captcha_image; ?></span>
                 <a href="" onclick="parent.window.location.reload(true)">[perbaharui gambar]</a>
                 <label for="captcha">Captcha</label>
                 <input type="text" name="captcha" class="form-control" required>
                 <?php echo form_error('captcha','<div class="text-small text-danger">','</div>') ?>
-              </div> -->
+              </div>
 
               <span class="m-2"><?php echo $this->session->flashdata('pesan') ?></span>
               

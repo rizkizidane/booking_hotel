@@ -336,20 +336,27 @@
 			<div id="horizontalTab">
 					<ul class="resp-tabs-list center">
 					<li>
-						<img src="<?php echo base_url('assets/assets_customer/') ?>images/teams1.jpg" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('assets/assets_customer/') ?>images/devin.jpg" alt=" " class="img-responsive" width="125px"/>
 					</li>
 					<li>
-						<img src="<?php echo base_url('assets/assets_customer/') ?>images/teams2.jpg" alt=" " class="img-responsive" />
+						<img src="<?php echo base_url('assets/assets_customer/') ?>images/edgar.jpg" alt=" " class="img-responsive" width="125px"/>
+					</li>
+					<li>
+						<img src="<?php echo base_url('assets/assets_customer/') ?>images/default.jpg" alt=" " class="img-responsive" width="125px"/>
+					</li>
+					<li>
+						<img src="<?php echo base_url('assets/assets_customer/') ?>images/default.jpg" alt=" " class="img-responsive" width="125px"/>
 					</li>
 					</ul>
 					<div class="resp-tabs-container">
 					<div class="tab1">
-						<div class="col-md-6 team-img-w3-agile">
+						<div class="col-md-5">
+							<img src="<?php echo base_url('assets/assets_customer/') ?>images/devin.jpg" width="400px">
 						</div>
-						<div class="col-md-6 team-Info-agileits">
-							<h4>Lucas Jimenez</h4>
-							<span>Manager</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
+						<div class="col-md-7 team-Info-agileits">
+							<h4>Devin Hidayat</h4>
+							<span>00000037384</span>
+							<p>Peran: </p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
@@ -362,12 +369,13 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="tab2">
-					<div class="col-md-6 team-img-w3-agile">
+						<div class="col-md-5 ">
+							<img src="<?php echo base_url('assets/assets_customer/') ?>images/edgar.jpg" width="400px">
 						</div>
-						<div class="col-md-6 team-Info-agileits">
-							<h4>Sarah Connor</h4>
-							<span>Receptionist</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>	
+						<div class="col-md-7 team-Info-agileits">
+							<h4>Edgar Oscar</h4>
+							<span>00000037495</span>
+							<p>Peran: </p>	
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
@@ -380,12 +388,13 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="tab3">
-						<div class="col-md-6 team-img-w3-agile">
+						<div class="col-md-5">
+							<img src="<?php echo base_url('assets/assets_customer/') ?>images/default.jpg" width="400px">
 						</div>
-						<div class="col-md-6 team-Info-agileits">
-							<h4>Ivan Simpson</h4>
-							<span>Manager</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
+						<div class="col-md-7 team-Info-agileits">
+							<h4>Moh Rizki Zidane</h4>
+							<span>00000039906</span>
+							<p>Peran: -</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
@@ -398,12 +407,13 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="tab4">
-					<div class="col-md-6 team-img-w3-agile">
+						<div class="col-md-5">
+							<img src="<?php echo base_url('assets/assets_customer/') ?>images/default.jpg" width="400px">
 						</div>
-						<div class="col-md-6 team-Info-agileits">
-							<h4>Marc Gutierrez</h4>
-							<span>Receptionist</span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
+						<div class="col-md-7 team-Info-agileits">
+							<h4>Elisabeth Hutabarat</h4>
+							<span>00000042524</span>
+							<p>Peran: -</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>

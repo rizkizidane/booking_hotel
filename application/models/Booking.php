@@ -28,6 +28,16 @@ class Booking extends CI_Model {
         }
     }
 
+    public function ambil_id_customer($id) {
+        $hasil = $this->db->where('id_customer', $id)->get('customer');
+        if($hasil->num_rows() > 0) {
+            return $hasil->result();
+        }
+        else {
+            return false;
+        }
+    }
+
     public function cek_login() {
         $email = set_value('email');
         $password = set_value('password');
