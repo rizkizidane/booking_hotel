@@ -55,7 +55,7 @@
                                                 <th>Nama Hotel</th>
                                                 <th>Fasilitas</th>
                                                 <th>Rating</th>
-                                                <th>Jumlah Kamar</th>
+                                                <th>Total Kamar</th>
                                                 <th>Harga</th>
                                                 <th>Gambar</th>
                                                 <th>Action</th>
@@ -70,7 +70,7 @@
                                                     <td><?php echo $h->nama_hotel ?></td>
                                                     <td><?php echo $h->fasilitas ?></td>
                                                     <td><?php echo $h->rating ?></td>
-                                                    <td><?php echo $h->jumlah_kamar ?></td>
+                                                    <td><?php echo $h->total_kamar ?></td>
                                                     <td>Rp. <?php echo number_format($h->harga,0,',','.') ?></td>
                                                     <td>
                                                         <img width="100px" src="<?php echo base_url().'assets/upload/'.$h->gambar ?>">

@@ -71,9 +71,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Jumlah Kamar</label>
-                                        <input type="text" name="jumlah_kamar" class="form-control" value="<?php echo $h->jumlah_kamar ?>">
-                                        <?php echo form_error('jumlah_kamar','<div class="text-small text-danger">','</div') ?>
+                                        <label>Total Kamar</label>
+                                        <input type="text" name="total_kamar" class="form-control" value="<?php echo $h->total_kamar ?>">
+                                        <?php echo form_error('total_kamar','<div class="text-small text-danger">','</div') ?>
                                     </div>
 
                                     <div class="form-group">

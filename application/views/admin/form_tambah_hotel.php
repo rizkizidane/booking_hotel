@@ -70,9 +70,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Jumlah Kamar</label>
-                                        <input type="number" name="jumlah_kamar" class="form-control" required>
-                                        <?php echo form_error('jumlah_kamar','<div class="text-small text-danger">','</div') ?>
+                                        <label>Total Kamar</label>
+                                        <input type="number" name="total_kamar" class="form-control" required>
+                                        <?php echo form_error('total_kamar','<div class="text-small text-danger">','</div') ?>
                                     </div>
 
                                     <div class="form-group">

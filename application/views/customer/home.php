@@ -309,8 +309,16 @@
 									<p><?php echo $h->fasilitas ?></p>
 								</h4>
 								<p>Rating: <?php echo $h->rating?></p>
-								<a href="<?php echo base_url('index.php/customer/reservation/tambah_reservation/'.$h->id_hotel) ?>"><button class="btn btn-primary">Book Now</button></a>
-								<a href="<?php echo base_url('index.php/customer/reservation/detail_reservation/'.$h->id_hotel) ?>"><button class="btn btn-success">View</button></a>
+
+									<?php if($this->session->userdata('nama_customer')) { ?>
+									<?php
+										echo anchor('customer/reservation/tambah_reservation/'.$h->id_hotel,'<button class="btn btn-primary" style="margin-right: 3px">Book Now</button>');
+										echo anchor('customer/reservation/detail_reservation/'.$h->id_hotel,'<button class="btn btn-success">View</button>');
+									?>
+									<?php } else { ?>
+										<a href="<?php echo base_url('index.php/auth/login') ?>"><button class="btn btn-info">Please Login First</button></a>
+										<a href="<?php echo base_url('index.php/customer/reservation/detail_reservation/'.$h->id_hotel) ?>"><button class="btn btn-success">View</button></a>
+									<?php } ?>
 							</div>
 							<div class="clearfix"> </div>
 						</li>

@@ -23,7 +23,7 @@ class Hotel extends CI_Controller {
             $nama_hotel     = $this->input->post('nama_hotel');
             $fasilitas      = $this->input->post('fasilitas');
             $rating         = $this->input->post('rating');
-            $jumlah_kamar   = $this->input->post('jumlah_kamar');
+            $total_kamar   = $this->input->post('total_kamar');
             $harga          = $this->input->post('harga');
             $gambar         = $_FILES['gambar']['name'];
             if($gambar=''){}
@@ -44,7 +44,7 @@ class Hotel extends CI_Controller {
             'nama_hotel'    => $nama_hotel,
             'fasilitas'     => $fasilitas,
             'rating'        => $rating,
-            'jumlah_kamar'  => $jumlah_kamar,
+            'total_kamar'  => $total_kamar,
             'harga'         => $harga,
             'gambar'        => $gambar
         );
@@ -74,7 +74,7 @@ class Hotel extends CI_Controller {
             $nama_hotel     = $this->input->post('nama_hotel');
             $fasilitas      = $this->input->post('fasilitas');
             $rating         = $this->input->post('rating');
-            $jumlah_kamar   = $this->input->post('jumlah_kamar');
+            $total_kamar   = $this->input->post('total_kamar');
             $harga          = $this->input->post('harga');
             $gambar         = $_FILES['gambar']['name'];
             if($gambar) {
@@ -96,7 +96,7 @@ class Hotel extends CI_Controller {
                 'nama_hotel'    => $nama_hotel,
                 'fasilitas'     => $fasilitas,
                 'rating'        => $rating,
-                'jumlah_kamar'  => $jumlah_kamar,
+                'total_kamar'  => $total_kamar,
                 'harga'         => $harga
             );
 
@@ -114,7 +114,7 @@ class Hotel extends CI_Controller {
         $this->form_validation->set_rules('nama_hotel','Nama Hotel','required');
         $this->form_validation->set_rules('fasilitas','Fasilitas','required');
         $this->form_validation->set_rules('rating','Rating','required');
-        $this->form_validation->set_rules('jumlah_kamar','Jumlah Kamar','required');
+        $this->form_validation->set_rules('total_kamar','Total Kamar','required');
         $this->form_validation->set_rules('harga','Harga','required');
     }
 

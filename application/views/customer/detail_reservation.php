@@ -52,8 +52,8 @@
                                         <td><?php echo $dt->fasilitas ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Jumlah Kamar</th>
-                                        <td><?php echo $dt->jumlah_kamar ?></td>
+                                        <th>Total Kamar</th>
+                                        <td><?php echo $dt->total_kamar ?></td>
                                     </tr>
                                     <tr>
                                         <th>Harga</th>
@@ -67,8 +67,13 @@
                         <img src="<?php echo base_url('assets/upload/').$dt->gambar; ?>" class="img-responsive" alt="/" style="height: 300px">
                     </div>
                 </div>
-                <a href="<?php echo base_url('index.php/customer/reservation/tambah_reservation/'.$dt->id_hotel) ?>"><button class="btn btn-primary">Book Now</button></a>
-                
+                <?php if($this->session->userdata('nama_customer')) { ?>
+                    <?php
+                        echo anchor('customer/reservation/tambah_reservation/'.$dt->id_hotel,'<button class="btn btn-primary">Book Now</button>');
+                    ?>
+                    <?php } else { ?>
+                        <a href="<?php echo base_url('index.php/auth/login') ?>"><button class="btn btn-info">Please Login First</button></a>
+                <?php } ?>
                 <?php endforeach; ?>
 			 <!-- /. PAGE INNER  -->
             </div>

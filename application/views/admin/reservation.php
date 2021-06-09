@@ -57,7 +57,6 @@
                                                 <th>Tanggal Check-in</th>
                                                 <th>Tanggal Check-out</th>
                                                 <th>Harga</th>
-                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -75,10 +74,6 @@
                                                         <td><?php echo $r->checkin ?></td>
                                                         <td><?php echo $r->checkout ?></td>
                                                         <td>Rp. <?php echo number_format($r->harga,0,',','.') ?></td>
-                                                        <td>
-                                                            <!-- <a href="<?php echo base_url('index.php/admin/reservation/delete_reservation/').$r->id_reservation ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
-                                                            <a href="<?php echo base_url('index.php/admin/reservation/update_reservation/').$r->id_reservation ?>" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a> -->
-                                                        </td>
                                                     </tr>
                                             <?php endforeach; ?>
                                         </tbody>
