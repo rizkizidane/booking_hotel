@@ -49,9 +49,9 @@
 							<li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li>
 							<li class="menu__item"><a href="<?php echo base_url('index.php/customer/profile') ?>">Profile</a></li>
 							<li class="menu__item"><a href="<?php echo base_url('index.php/auth/logout') ?>">Logout</a></li>
-							<li class="s-bar">
+							<!--<li class="s-bar">-->
 								<div class="search">
-									<input class="search_box" type="checkbox" id="search_box">
+									<!--<input class="search_box" type="checkbox" id="search_box">-->
 									<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
 									<div class="search_form">
 										<form action="#" method="post">
